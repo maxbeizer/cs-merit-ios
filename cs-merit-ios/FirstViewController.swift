@@ -20,7 +20,6 @@ class FirstViewController: UIViewController {
         .responseJSON() {
           (_, _, data, _) in
           let foo = JSON(data!)
-          println(data)
         }
     }
 
