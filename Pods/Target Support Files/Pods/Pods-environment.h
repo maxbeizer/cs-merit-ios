@@ -6,11 +6,11 @@
 // project.
 
 
-// AlamoFire
-#define COCOAPODS_POD_AVAILABLE_AlamoFire
-#define COCOAPODS_VERSION_MAJOR_AlamoFire 1
-#define COCOAPODS_VERSION_MINOR_AlamoFire 1
-#define COCOAPODS_VERSION_PATCH_AlamoFire 4
+// Alamofire
+#define COCOAPODS_POD_AVAILABLE_Alamofire
+#define COCOAPODS_VERSION_MAJOR_Alamofire 1
+#define COCOAPODS_VERSION_MINOR_Alamofire 1
+#define COCOAPODS_VERSION_PATCH_Alamofire 4
 
 // SwiftyJSON
 #define COCOAPODS_POD_AVAILABLE_SwiftyJSON
