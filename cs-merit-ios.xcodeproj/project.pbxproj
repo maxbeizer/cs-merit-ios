@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D1F9578C5107B1B154AA9580 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F0419F0640EBF17660480C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F743A4A91AD36A92007812A3 /* BadgeTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F743A4A81AD36A92007812A3 /* BadgeTypeTableViewCell.swift */; };
 		F784B4FD1AAFD66F00BC2611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F784B4FC1AAFD66F00BC2611 /* AppDelegate.swift */; };
 		F784B4FF1AAFD66F00BC2611 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F784B4FE1AAFD66F00BC2611 /* FirstViewController.swift */; };
 		F784B5011AAFD66F00BC2611 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F784B5001AAFD66F00BC2611 /* SecondViewController.swift */; };
@@ -31,6 +32,7 @@
 		78E37A73CE2770F156E2ABD9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C7D45E02DEDF1A6565E030 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D6F0419F0640EBF17660480C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F743A4A81AD36A92007812A3 /* BadgeTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTypeTableViewCell.swift; sourceTree = "<group>"; };
 		F784B4F71AAFD66F00BC2611 /* cs-merit-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-merit-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F784B4FB1AAFD66F00BC2611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F784B4FC1AAFD66F00BC2611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F784B4FC1AAFD66F00BC2611 /* AppDelegate.swift */,
 				F784B4FE1AAFD66F00BC2611 /* FirstViewController.swift */,
 				F784B5001AAFD66F00BC2611 /* SecondViewController.swift */,
+				F743A4A81AD36A92007812A3 /* BadgeTypeTableViewCell.swift */,
 				F784B5021AAFD66F00BC2611 /* Main.storyboard */,
 				F784B5051AAFD66F00BC2611 /* Images.xcassets */,
 				F784B5071AAFD66F00BC2611 /* LaunchScreen.xib */,
@@ -293,6 +296,7 @@
 				F784B5011AAFD66F00BC2611 /* SecondViewController.swift in Sources */,
 				F784B4FD1AAFD66F00BC2611 /* AppDelegate.swift in Sources */,
 				F784B4FF1AAFD66F00BC2611 /* FirstViewController.swift in Sources */,
+				F743A4A91AD36A92007812A3 /* BadgeTypeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
