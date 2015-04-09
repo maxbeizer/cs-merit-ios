@@ -17,7 +17,6 @@ class BadgeTypeTableViewCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
-    badgeNameLabel.text = "foo"
   }
   
   override func setSelected(selected: Bool, animated: Bool) {

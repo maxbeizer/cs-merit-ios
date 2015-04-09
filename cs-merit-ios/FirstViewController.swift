@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   @IBOutlet weak var tableView: UITableView!
@@ -16,17 +14,26 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    
-    Alamofire.request(.GET, "http://merit.centresource.com/api/v1/badge-types", parameters: ["user_email": "mbeizer@centresource.com", "user_token": "SwDXw3x_gQrjyk_55sXK"])
-      .responseJSON() {
-        (_, _, data, _) in
-        let foo = JSON(data!)
-    }
+    MeritClient.sharedInstace().getBadgeTypes({ (success) -> () in
+      if(success) {
+        
+      }
+      else {
+        self.showAlert("There was a problem getting badge types. Please try again.")
+      }
+    })
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  func showAlert(message: String) {
+    let alertController = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+    let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+    alertController.addAction(alertAction)
+    presentViewController(alertController, animated: true, completion: nil)
   }
   
   // MARK: - Table view data source
