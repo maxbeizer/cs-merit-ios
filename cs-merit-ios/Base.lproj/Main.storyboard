@@ -37,7 +37,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-Cy-kE2">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="badgeTypeCell" rowHeight="74" id="mKO-gI-CaG" userLabel="badgeTypeCell" customClass="BadgeTypeTableViewCell" customModule="cs_merit_ios" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="badgeTypeCell" rowHeight="74" id="mKO-gI-CaG" userLabel="badgeTypeCell" customClass="BadgeTypeTableViewCell" customModule="cs_merit_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mKO-gI-CaG" id="cU1-L1-rnH">
@@ -71,7 +71,7 @@
                                                 <constraint firstItem="PCW-lc-jLo" firstAttribute="leading" secondItem="CGt-NQ-25q" secondAttribute="trailing" constant="8" id="Y4U-5R-fvY"/>
                                                 <constraint firstItem="PCW-lc-jLo" firstAttribute="top" secondItem="Vd7-ru-ozc" secondAttribute="bottom" constant="15" id="etZ-5q-cbY"/>
                                                 <constraint firstAttribute="centerY" secondItem="CGt-NQ-25q" secondAttribute="centerY" id="fRs-mH-tzS"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Vd7-ru-ozc" secondAttribute="trailing" id="x7c-1n-NbQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vd7-ru-ozc" secondAttribute="trailing" constant="-67" id="x7c-1n-NbQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
