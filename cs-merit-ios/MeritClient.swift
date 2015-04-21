@@ -14,7 +14,7 @@ class MeritClient {
   let apiBaseURL: String = "http://merit.centresource.com/api/v1/"
   var badgeTypes: [BadgeType]? = []
   
-  class func sharedInstace() -> MeritClient {
+  class func sharedInstance() -> MeritClient {
     struct Singleton {
       static let instance = MeritClient()
     }

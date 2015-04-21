@@ -12,16 +12,16 @@ import UIKit
 class BadgeType: NSObject {
   
   var name: String?
-  var completionCredits: String?
-  var rewardCount: String?
+  var completionCredits: Int?
+  var rewardAmount: Int?
   var badgeTypeDescription: String?
   
   required init(_ badgeTypeDictionary: NSDictionary) {
     super.init()
     
     name = badgeTypeDictionary["name"] as? String
-    completionCredits = badgeTypeDictionary["completion_credits"] as? String
-    rewardCount = badgeTypeDictionary["reward_count"] as? String
+    completionCredits = badgeTypeDictionary["completion_credits"] as? Int
+    rewardAmount = badgeTypeDictionary["reward_amount"] as? Int
     badgeTypeDescription = badgeTypeDictionary["description"] as? String
     
   }

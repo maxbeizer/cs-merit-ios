@@ -14,9 +14,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    MeritClient.sharedInstace().getBadgeTypes({ (success) -> () in
+    MeritClient.sharedInstance().getBadgeTypes({ (success) -> () in
       if(success) {
-        
+        self.tableView.reloadData()
       }
       else {
         self.showAlert("There was a problem getting badge types. Please try again.")
@@ -48,11 +48,16 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     // #warning Incomplete method implementation.
     // Return the number of rows in the section.
     //    return SearchClient.sharedInstace().tracks.count
-    return 1
+    return MeritClient.sharedInstance().badgeTypes!.count
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("badgeTypeCell", forIndexPath: indexPath) as! BadgeTypeTableViewCell
+    
+    let badgeType = MeritClient.sharedInstance().badgeTypes![indexPath.row]
+    cell.badgeNameLabel.text = badgeType.name
+    cell.badgeAmountLabel.text = "$\(badgeType.rewardAmount!)"
+
     return cell
   }
   
